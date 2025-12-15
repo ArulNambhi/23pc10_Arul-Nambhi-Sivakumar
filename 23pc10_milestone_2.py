@@ -3,8 +3,8 @@ import math
 
 def minimal_angle_diff(a, b):
     
-    diff = abs(a - b) % 180
-    return min(diff, abs(180 - diff))
+    diff = abs(a - b) % 90
+    return min(diff, abs(90 - diff))
 
 def dfs(cost, vis, last, cnt, velocity, coords, current_camera_angle, dice_angles, rotational_velocity):
     n = len(cost)
